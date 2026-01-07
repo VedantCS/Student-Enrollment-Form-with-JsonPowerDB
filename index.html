@@ -231,3 +231,91 @@
             }
             return true;
         }
+         // Save new student record
+        function saveData() {
+            if (!validateForm()) {
+                return;
+            }
+            
+            const jsonStr = {
+                "Roll-No": $('#rollNo').val(),
+                "Full-Name": $('#fullName').val(),
+                "Class": $('#class').val(),
+                "Birth-Date": $('#birthDate').val(),
+                "Address": $('#address').val(),
+                "Enrollment-Date": $('#enrollmentDate').val()
+            };
+            
+            const reqString = JSON.stringify({
+                token: token,
+                cmd: "PUT",
+                dbName: dbName,
+                rel: relationName,
+                jsonStr: jsonStr
+            });
+            
+            $.ajax({
+                type: "POST",
+                url: baseUrl + imlUrl,
+                data: reqString,
+                success: function(result) {
+                    const data = JSON.parse(result);
+                    if (data.status === 200) {
+                        alert('Student enrolled successfully!');
+                        resetForm();
+                    } else {
+                        alert('Error: ' + data.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    alert('Error saving data: ' + error);
+                }
+            });
+        }
+        
+        // Update existing student record
+        function updateData() {
+            if (!validateForm()) {
+                return;
+            }
+            
+            if (currentRecNo === null) {
+                alert('No record selected for update');
+                return;
+            }
+            
+            const jsonStr = {};
+            jsonStr[currentRecNo] = {
+                "Full-Name": $('#fullName').val(),
+                "Class": $('#class').val(),
+                "Birth-Date": $('#birthDate').val(),
+                "Address": $('#address').val(),
+                "Enrollment-Date": $('#enrollmentDate').val()
+            };
+            
+            const reqString = JSON.stringify({
+                token: token,
+                cmd: "UPDATE",
+                dbName: dbName,
+                rel: relationName,
+                jsonStr: jsonStr
+            });
+            
+            $.ajax({
+                type: "POST",
+                url: baseUrl + imlUrl,
+                data: reqString,
+                success: function(result) {
+                    const data = JSON.parse(result);
+                    if (data.status === 200) {
+                        alert('Student record updated successfully!');
+                        resetForm();
+                    } else {
+                        alert('Error: ' + data.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    alert('Error updating data: ' + error);
+                }
+            });
+        }
