@@ -151,3 +151,50 @@
                 }
             });
         }
+         // Populate form with existing data
+        function populateForm(data) {
+            $('#fullName').val(data["Full-Name"]);
+            $('#class').val(data["Class"]);
+            $('#birthDate').val(data["Birth-Date"]);
+            $('#address').val(data["Address"]);
+            $('#enrollmentDate').val(data["Enrollment-Date"]);
+        }
+        
+        // Enable Save mode (new record)
+        function enableSaveMode() {
+            $('#rollNo').prop('disabled', true);
+            enableFormFields();
+            $('#saveBtn').prop('disabled', false);
+            $('#updateBtn').prop('disabled', true);
+            $('#resetBtn').prop('disabled', false);
+            $('#fullName').focus();
+        }
+        
+        // Enable Update mode (existing record)
+        function enableUpdateMode() {
+            $('#rollNo').prop('disabled', true);
+            enableFormFields();
+            $('#saveBtn').prop('disabled', true);
+            $('#updateBtn').prop('disabled', false);
+            $('#resetBtn').prop('disabled', false);
+            $('#fullName').focus();
+        }
+        
+        // Enable all form fields except Roll No
+        function enableFormFields() {
+            $('#fullName').prop('disabled', false);
+            $('#class').prop('disabled', false);
+            $('#birthDate').prop('disabled', false);
+            $('#address').prop('disabled', false);
+            $('#enrollmentDate').prop('disabled', false);
+        }
+        
+        // Disable all form fields except Roll No
+        function disableFormFields() {
+            $('#fullName').prop('disabled', true);
+            $('#class').prop('disabled', true);
+            $('#birthDate').prop('disabled', true);
+            $('#address').prop('disabled', true);
+            $('#enrollmentDate').prop('disabled', true);
+        }
+        
