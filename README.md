@@ -1,4 +1,4 @@
-# Student Enrollment Form - JsonPowerDB Integration
+# Student Enrollment Form - JsonPowerDB Integration(DO CHECK THE NOTES I MADE!!)
 
 A dynamic web-based student enrollment management system built with HTML, Bootstrap, and JsonPowerDB. This project demonstrates CRUD operations using JsonPowerDB's serverless REST API for seamless student data management.
 
