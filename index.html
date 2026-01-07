@@ -197,4 +197,37 @@
             $('#address').prop('disabled', true);
             $('#enrollmentDate').prop('disabled', true);
         }
-        
+         // Validate form data
+        function validateForm() {
+            if ($('#rollNo').val() === '') {
+                alert('Roll No is required');
+                $('#rollNo').focus();
+                return false;
+            }
+            if ($('#fullName').val() === '') {
+                alert('Full Name is required');
+                $('#fullName').focus();
+                return false;
+            }
+            if ($('#class').val() === '') {
+                alert('Class is required');
+                $('#class').focus();
+                return false;
+            }
+            if ($('#birthDate').val() === '') {
+                alert('Birth Date is required');
+                $('#birthDate').focus();
+                return false;
+            }
+            if ($('#address').val() === '') {
+                alert('Address is required');
+                $('#address').focus();
+                return false;
+            }
+            if ($('#enrollmentDate').val() === '') {
+                alert('Enrollment Date is required');
+                $('#enrollmentDate').focus();
+                return false;
+            }
+            return true;
+        }
