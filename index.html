@@ -319,3 +319,20 @@
                 }
             });
         }
+        // Reset form to initial state
+        function resetForm() {
+            $('#studentForm')[0].reset();
+            currentRecNo = null;
+            
+            $('#rollNo').prop('disabled', false);
+            disableFormFields();
+            
+            $('#saveBtn').prop('disabled', true);
+            $('#updateBtn').prop('disabled', true);
+            $('#resetBtn').prop('disabled', true);
+            
+            $('#rollNo').focus();
+        }
+    </script>
+</body>
+</html>
