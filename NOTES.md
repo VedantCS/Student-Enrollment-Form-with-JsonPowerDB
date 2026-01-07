@@ -362,33 +362,8 @@ const request = createGET_BY_KEYRequest(
 
 ---
 
-## 📞 Support
-
-- 📧 **Email**: support@login2explore.com
-- 💬 **Community Forum**: [Login2Xplore Ask](https://login2xplore.com/ask/)
-- 📺 **YouTube Tutorials**: [Login2Xplore Channel](https://www.youtube.com/channel/UCKTwUS9bXqEJnN-TLYje1Sg)
-
----
 
 <p align="center">
   <strong>⭐ Start building real-time applications with JsonPowerDB today! ⭐</strong>
 </p>
 ```
-
-This enhanced version includes:
-- ✨ Professional badges and icons
-- 📊 Well-organized tables for better readability
-- 🎨 Proper code syntax highlighting
-- 📝 Clear section headers with emojis
-- 💡 Comprehensive jpdb-commons.js information
-- 🔗 All relevant links and resources
-- 📚 Learning resources section
-- ⚡ Quick start guide
-- ✅ Best practices section
-
-The markdown is now much more visually appealing and easier to navigate![1][2][3][4]
-
-[1](https://github.com/MandeepDalavi/JsonPowerDB)
-[2](https://www.youtube.com/watch?v=eMBDrrZ0I1Y)
-[3](https://github.com/Bhavitejareddy/Login2exploreinternship)
-[4](https://www.linkedin.com/pulse/feature-jsonpowerdb-vishwajeet-kumar)
