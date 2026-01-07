@@ -4,7 +4,15 @@ A dynamic web-based student enrollment management system built with HTML, Bootst
 
 ![Project Status](https://img.shields.io/badge/status-active-success.svg)
 ![JsonPowerDB](https://img.shields.io/badge/Database-JsonPowerDB-blue.svg)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-purple.svg)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-purple.svg)Uploading Assignment.mp4…
+
+
+
+
+
+https://github.com/user-attachments/assets/10303215-3ead-4e06-9842-d5969618ecb1
+
+
 
 ## 📋 Table of Contents
 
@@ -33,7 +41,7 @@ The **Student Enrollment Form** is a lightweight, responsive web application tha
 - **Zero Backend Setup**: Serverless architecture eliminates server configuration needs
 - **Responsive Design**: Bootstrap 5-powered UI adapts to all screen sizes
 
-## 🚀 Benefits of using JsonPowerDB
+##  Benefits of using JsonPowerDB
 
 JsonPowerDB offers several advantages over traditional database systems [web:18][web:45][web:5]:
 
@@ -59,7 +67,7 @@ JsonPowerDB offers several advantages over traditional database systems [web:18]
 - **Pluggable API Framework**: Extend functionality with custom APIs [web:18]
 - **Million Indexes Support**: Handle large-scale data efficiently [web:3]
 
-## 📅 Release History
+## Release History
 
 ### Version 1.0.0 (January 2026)
 - Initial release with complete CRUD functionality
@@ -69,7 +77,7 @@ JsonPowerDB offers several advantages over traditional database systems [web:18]
 - Real-time validation for all input fields
 - Error handling and user feedback mechanisms
 
-## ✨ Features
+##  Features
 
 ### Form Management
 - **Primary Key Auto-Detection**: Automatically checks database when Roll No is entered
@@ -89,7 +97,7 @@ JsonPowerDB offers several advantages over traditional database systems [web:18]
 - **Clean UI**: Gradient background with professional card-based layout
 - **Accessibility**: Proper labels, placeholders, and required field indicators
 
-## 📦 Prerequisites
+##  Prerequisites
 
 Before running this project, ensure you have:
 
@@ -97,7 +105,7 @@ Before running this project, ensure you have:
 - JsonPowerDB account and connection token
 - Internet connection (for CDN resources)
 
-## 🔧 Installation
+##  Installation
 
 ### Step 1: Get JsonPowerDB Token
 
